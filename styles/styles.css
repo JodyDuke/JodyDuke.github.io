@@ -20,7 +20,6 @@ a:hover {
 
 
 .header {
-	display: grid;
 	width: 100vw;
 	border-bottom: 1px solid #D3D3D3;
 }
