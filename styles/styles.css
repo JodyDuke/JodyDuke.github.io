@@ -1,3 +1,9 @@
+/*-------------
+
+GLOBAL STYLES
+
+-------------*/
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
@@ -11,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 a {
 	color: #151824;
 }
@@ -20,13 +25,19 @@ a:hover {
 	color: blue;
 }
 
+/*-------------
+
+	HEADER
+
+-------------*/
+
 
 .header {
 	width: 100vw;
 	border-bottom: 1px solid #D3D3D3;
 }
 
-.col-12 {
+.header-sub-container {
 	margin: 0px auto;
 	padding: 7px 0px 0px;
 	width: 95%;
@@ -56,6 +67,32 @@ a:hover {
 .links-mobile {
 	display: none;
 }
+
+
+/*-------------
+
+	 BODY
+
+-------------*/
+
+.body {
+	margin: 3em auto 0em;
+	width: 95%;
+}
+
+.body h2 {
+	margin: 0em auto;
+	text-align: center;
+	width: 85%;
+	max-width: 700px;
+}
+
+
+/*-------------
+
+MEDIA QUERIES
+
+-------------*/
 
 
 @media screen and (max-width: 550px) {
