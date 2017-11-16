@@ -11,7 +11,7 @@ body {
 	color: #151824;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, pre {
 	font-family: 'Raleway', sans-serif;
 
 }
@@ -67,11 +67,13 @@ a {
 	display: none;
 }
 
-.codewars img {
-	width: 28px;
+.codewars{
 	height: 28px;
-	margin-bottom: -2px;
-	padding-right: 5px;
+	width: 28px;
+  	display: inline-block;
+  	stroke:#000;
+  	stroke-dasharray: 1 12;
+  	margin-bottom: -3px;
 }
 
 
@@ -82,13 +84,17 @@ a {
 
 -------------*/
 
-.body {
+.body-container {
 	margin: 2em auto 0em;
 	width: 90%;
 	max-width: 700px
 }
 
-.body h2 {
+pre {
+	display: inline;
+}
+
+.body-container h2 {
 	margin: 0em auto;
 	text-align: left;
 
