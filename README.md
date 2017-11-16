@@ -1,2 +1,2 @@
 # Github portfolio page
-[www.superfruityninja.github.io](https://superfruityninja.github.io)
+[www.jodyduke.github.io](https://JodyDuke.github.io)
