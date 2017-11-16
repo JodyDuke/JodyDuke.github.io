@@ -94,6 +94,10 @@ pre {
 	display: inline;
 }
 
+.penguin {
+	color: #ff5300;
+}
+
 .body-container h2 {
 	margin: 0em auto;
 	text-align: left;
