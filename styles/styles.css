@@ -111,22 +111,17 @@ pre {
 -------------*/
 
 .projects-carousel {
-	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 100%;
-	height: 300px;
-	text-align: center;
+	position: relative;
+	text-align: left;
 }
 
 .project {
-	height: 300px;
+	display: inline-block;
+	height: 150px;
+	width: 45%;
+	background-color: lightgrey;
+	margin: 10px;
 }
-
-.project img {
-	padding: 1%;
-	max-width: 100%;
-}
-
 
 
 /*-------------
@@ -147,4 +142,15 @@ MEDIA QUERIES
 		text-align: right;
 		margin-right: 15px;
 	}
+
+	.projects-carousel {
+		text-align: center;
+	}
+
+	.project {
+		width: 90%;
+		background-color: blue;
+	}
+
 }
+
