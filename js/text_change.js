@@ -5,8 +5,8 @@ let count = 0
 function textChange(){
   domNode.innerHTML = langs[count];
   count++
-  
-  if(count === 8){
+
+  if(count === langs.length){
     count = 0;
   }    
 }
