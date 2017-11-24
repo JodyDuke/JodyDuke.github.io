@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "title": "Calculator",
+            "description": "A small calculator app with a long press clear button using vanilla JS",
+            "github": "https://github.com/JodyDuke/calculator",
+            "link": "https://codepen.io/JodyDuke/full/JOYRVB/"
+        },
+        {
+            "title": "tools.jodyduke.co.uk",
+            "description": "A selection of tools for use in the film industry, including a holiday pay calculator and framerate calculator. Uses Bootstrap and vanilla JS",
+            "github": "https://github.com/JodyDuke/tools.jodyduke.co.uk",
+            "link": "http://tools.jodyduke.co.uk/"
+        },
+        {
+            "title": "Webdev.email",
+            "description": "A weekly newsletter of web development links using Mailchimp",
+            "github": "https://github.com/JodyDuke/webdev.email",
+            "link": "https://www.webdev.email/"
+        }
+
+    ]
+
+}
