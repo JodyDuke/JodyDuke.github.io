@@ -12,6 +12,13 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
+function elementGen(child, text) {
+    let element = document.createElement(child);
+    let elemContent = document.createTextNode(text);
+    element.appendChild(elemContent);
+    return element
+}
+
 function init() {
     loadJSON(function (response) {
         let data = JSON.parse(response);
@@ -19,10 +26,8 @@ function init() {
         for(key in data.projects){
             let project = document.createElement('div');
             project.className += 'project';
-            let title = document.createElement('h4');
-            let titleText = document.createTextNode(data.projects[key].title);
-            let descrip = document.createElement('p')
-            let descripText = document.createTextNode(data.projects[key].description);
+            let title = elementGen('h4', data.projects[key].title);
+            let description = elementGen('p', data.projects[key].description);
             let linkCont = document.createElement('div');
             linkCont.className += 'project-links';
             let github = document.createElement('a');
@@ -31,13 +36,10 @@ function init() {
             let link = document.createElement('a');
             link.href += data.projects[key].link;
             link.innerHTML = '<i class="fa fa-link fa-lg"></i>';
-            title.appendChild(titleText);
-            descrip.appendChild(descripText);
             linkCont.appendChild(github)
             linkCont.appendChild(link)
-
             project.appendChild(title);
-            project.appendChild(descrip)
+            project.appendChild(description)
             project.appendChild(linkCont)
             container.appendChild(project)
         }
