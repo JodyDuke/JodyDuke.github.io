@@ -24,12 +24,11 @@ a {
 
 
 
-/*-------------
+/*----------------
 
-	HEADER
+	FULL HEADER
 
--------------*/
-
+----------------*/
 
 .header {
 	width: 100vw;
@@ -82,8 +81,7 @@ a {
 
 .codewars:hover {
 	stroke: #3a86ff;
-}
-
+} 
 
 
 /*-------------
@@ -92,13 +90,13 @@ a {
 
 -------------*/
 
-.body-container {
+#body-container {
 	margin: 2em auto 0em;
 	width: 90%;
 	max-width: 700px
 }
 
-.body-container h1 {
+#body-container h1 {
 	margin: 1em 0em 10px;
 }
 
@@ -110,7 +108,7 @@ pre {
 	color: #ff5300;
 }
 
-.body-container h2 {
+#body-container h2 {
 	margin: 0em auto;
 	text-align: left;
 
