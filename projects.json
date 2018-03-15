@@ -7,10 +7,9 @@
             "link": "https://codepen.io/JodyDuke/full/JOYRVB/"
         },
         {
-            "title": "tools.jodyduke.co.uk",
-            "description": "A selection of tools for use in the film industry, including a holiday pay calculator and framerate calculator. Uses Bootstrap and vanilla JS.",
-            "github": "https://github.com/JodyDuke/tools.jodyduke.co.uk",
-            "link": "http://tools.jodyduke.co.uk/"
+            "title": "Film production tools",
+            "description": "A selection of tools for use in the film industry, including a holiday pay calculator and framerate calculator. Built using React, React router, Sass, & Node.",
+            "github": "https://github.com/JodyDuke/tools.jodyduke.co.uk"
         },
         {
             "title": "Webdev.email",
