@@ -37,10 +37,10 @@ function init() {
             link.href += data.projects[key].link;
             link.innerHTML = '<i class="fa fa-link fa-lg"></i>';
             linkCont.appendChild(github)
-            linkCont.appendChild(link)
+            if (data.projects[key].link) { linkCont.appendChild(link) }
             project.appendChild(title);
             project.appendChild(description)
-            project.appendChild(linkCont)
+            project.appendChild(linkCont) 
             container.appendChild(project)
         }
 
