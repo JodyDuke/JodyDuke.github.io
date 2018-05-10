@@ -110,6 +110,12 @@ a:hover {
 	max-width: 900px;
 }
 
+.body-container h1 {
+	margin: 20px 0 5px 0;
+	text-decoration: underline;
+	text-decoration-color: #fee12d;	
+}
+
 pre {
 	display: inline;
 }
@@ -242,7 +248,7 @@ MEDIA QUERIES
 	}
 
 	#hero-container h2 {
-		font-size: 180%;
+		font-size: 200%;
 		margin: 0em 5%;
 	}
 
@@ -268,9 +274,9 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 580px) {
 	.body-container {
-		margin: 18em auto;
+		margin: 19em auto;
 	}
 }
 
