@@ -1,15 +1,33 @@
 {
     "projects": [
         {
-            "title": "Calculator",
-            "description": "A small calculator app with a long press clear button using vanilla JS.",
-            "github": "https://github.com/JodyDuke/calculator",
-            "link": "https://codepen.io/JodyDuke/full/JOYRVB/"
+            "title": "Movie anniversaries web app",
+            "description": "A web app built with React displaying a calendar with upcoming movie anniversaries and movie information.",
+            "github": "https://github.com/JodyDuke/movie_anniversary_react_project",
+            "link": "/"
         },
         {
             "title": "Film production tools",
             "description": "A selection of tools for use in the film industry, including a holiday pay calculator and framerate calculator. Built using React, React router, Sass, & Node.",
-            "github": "https://github.com/JodyDuke/tools.jodyduke.co.uk"
+            "github": "https://github.com/JodyDuke/film-production-tools",
+            "link": "https://www.filmproductiontools.xyz"
+        },
+        {
+            "title": "TFL oyster webscraper",
+            "description": "A webscraper built with phantomJS that returns a warning if there are any incomplete journeys linked to the account.",
+            "github": "https://github.com/JodyDuke/oyster_card_scraper"
+        },
+        {
+            "title": "Calculator",
+            "description": "A small calculator app with a long press clear button using vanilla JS.",
+            "github": "https://github.com/JodyDuke/calculator",
+            "link": "https://codepen.io/JodyDuke/pen/JOYRVB"
+        },
+        {
+            "title": "Rock, paper, scissors",
+            "description": "A rock, paper, scissors game built with vanilla JS",
+            "github": "https://github.com/JodyDuke/rock-paper-scissors",
+            "link": "https://codepen.io/JodyDuke/pen/xpKWwB"
         },
         {
             "title": "Webdev.email",
