@@ -5,7 +5,7 @@ let langs = ["Node.",
       "Webpack.",
       "HTML5.",
       "CSS3.",
-      "SCSS.",
+      "SASS.",
       "Git.",
       "Javascript."
     ]
