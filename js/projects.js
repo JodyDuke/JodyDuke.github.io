@@ -31,6 +31,19 @@ function init() {
             } else {
                 project.className += 'project';
             };
+
+            if(data.projects[key].image) {
+                let imageContainer = document.createElement('div');
+                imageContainer.className += 'image';
+                let image = document.createElement('img');
+                image.setAttribute('src', data.projects[key].image);
+                imageContainer.appendChild(image);
+                project.appendChild(imageContainer)
+            }
+
+            let infoContainer = document.createElement('div');
+            infoContainer.className += 'data';
+            
             let title = elementGen('h4', data.projects[key].title);
             let description = elementGen('p', data.projects[key].description);
             let linkCont = document.createElement('div');
@@ -43,9 +56,10 @@ function init() {
             link.innerHTML = '<i class="fa fa-link fa-lg"></i>';
             linkCont.appendChild(github)
             if (data.projects[key].link) { linkCont.appendChild(link) }
-            project.appendChild(title);
-            project.appendChild(description)
-            project.appendChild(linkCont) 
+            infoContainer.appendChild(title);
+            infoContainer.appendChild(description)
+            infoContainer.appendChild(linkCont) 
+            project.appendChild(infoContainer)
             container.appendChild(project)
             }
         });
