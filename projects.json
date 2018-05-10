@@ -2,7 +2,7 @@
     "projects": [
         {
             "banner": "hero",
-            "image": "./img/movie_anni.png",
+            "image": "./img/movie_anni.jpg",
             "title": "Movie anniversaries web app",
             "description": "A web app built with React displaying a calendar with upcoming movie anniversaries and movie information.",
             "github": "https://github.com/JodyDuke/movie_anniversary_react_project",
