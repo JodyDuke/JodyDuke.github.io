@@ -157,6 +157,17 @@ table h4 {
 	text-align: left;
 }
 
+.project-hero {
+	position: relative;
+	grid-column: 1 / 2;
+	min-height: 160px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	margin: 10px;
+	box-shadow: 2px 2px 4px lightgray;
+	background-color: red;
+}
+
 .project {
 	position: relative;
 	min-height: 160px;

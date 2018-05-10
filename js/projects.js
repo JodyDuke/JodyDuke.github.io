@@ -25,7 +25,12 @@ function init() {
 
         for(key in data.projects){
             let project = document.createElement('div');
-            project.className += 'project';
+
+            if (data.projects[key].banner === "hero") { 
+                project.className += 'project-hero';
+            } else {
+                project.className += 'project';
+            };
             let title = elementGen('h4', data.projects[key].title);
             let description = elementGen('p', data.projects[key].description);
             let linkCont = document.createElement('div');
@@ -42,10 +47,8 @@ function init() {
             project.appendChild(description)
             project.appendChild(linkCont) 
             container.appendChild(project)
-        }
-
-
-    });
+            }
+        });
 }
 
 init()
