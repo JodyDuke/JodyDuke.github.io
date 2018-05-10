@@ -52,6 +52,7 @@ function init() {
             github.href += data.projects[key].github;
             github.innerHTML = '<i class="fa fa-github fa-lg"></i>';
             let link = document.createElement('a');
+            link.setAttribute('target', '_blank')
             link.href += data.projects[key].link;
             link.innerHTML = '<i class="fa fa-link fa-lg"></i>';
             linkCont.appendChild(github)

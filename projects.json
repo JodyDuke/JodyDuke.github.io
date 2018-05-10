@@ -10,29 +10,27 @@
         },
         {
             "title": "Film production tools",
+            "image": "./img/prod_tools.jpg",
             "description": "A selection of tools for use in the film industry, including a holiday pay calculator and framerate calculator. Built using React, React router, Sass, & Node.",
             "github": "https://github.com/JodyDuke/film-production-tools",
             "link": "https://www.filmproductiontools.xyz"
         },
         {
             "title": "TFL oyster webscraper",
+            "image": "./img/oyster.jpg",
             "description": "A webscraper built with phantomJS that returns a warning if there are any incomplete journeys linked to the account.",
             "github": "https://github.com/JodyDuke/oyster_card_scraper"
         },
         {
             "title": "Calculator",
+            "image": "./img/calc.jpg",
             "description": "A small calculator app with a long press clear button using vanilla JS.",
             "github": "https://github.com/JodyDuke/calculator",
             "link": "https://codepen.io/JodyDuke/pen/JOYRVB"
         },
         {
-            "title": "Rock, paper, scissors",
-            "description": "A rock, paper, scissors game built with vanilla JS",
-            "github": "https://github.com/JodyDuke/rock-paper-scissors",
-            "link": "https://codepen.io/JodyDuke/pen/xpKWwB"
-        },
-        {
             "title": "Webdev.email",
+            "image": "./img/webdev.jpg",
             "description": "A weekly newsletter of web development links using Mailchimp and a html/css page.",
             "github": "https://github.com/JodyDuke/webdev.email",
             "link": "https://www.webdev.email/"
