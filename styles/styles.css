@@ -20,11 +20,12 @@ h1, h2, h3, h4, h5, h6, pre {
 
 a {
 	color: #151824;
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: #fee12d;
 }
 
 a:hover {
-	color: blue;
+	text-decoration-color: blue;
 }
 
 
@@ -71,7 +72,8 @@ a:hover {
 	font-family: 'montserrat', sans-serif;
 	font-weight: 500;
 	padding: 0px 5px;
-	text-decoration: underline;
+	/* text-decoration: underline;
+	text-decoration-color: #fee12d; */
 }
 
 .links-mobile {
@@ -96,14 +98,15 @@ a:hover {
 	position: absolute;
 	left: auto;
 	right: auto;
-	margin: 0px 15% 10px 15%;
+	margin: 0px 5% 10px 5%;
 	text-align: center;
 	font-size: 220%;
 }
 
 .body-container {
-	clear: both;
+	display: block;
 	margin: 15em auto;
+	width: 90%;
 	max-width: 700px;
 }
 
@@ -220,6 +223,12 @@ MEDIA QUERIES
 @media screen and (max-width: 700px) {
 	#projects-carousel {
 		grid-template-columns: 100%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.body-container {
+		margin: 18em auto;
 	}
 }
 
