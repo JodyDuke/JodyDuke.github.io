@@ -105,7 +105,7 @@ a:hover {
 
 .body-container {
 	display: block;
-	margin: 15em auto;
+	margin: 12em auto;
 	width: 90%;
 	max-width: 700px;
 }
@@ -223,6 +223,16 @@ MEDIA QUERIES
 @media screen and (max-width: 700px) {
 	#projects-carousel {
 		grid-template-columns: 100%;
+	}
+
+	.body-container {
+		margin: 16em auto;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.body-container {
+		margin: 14em auto;
 	}
 }
 
