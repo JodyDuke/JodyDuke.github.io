@@ -9,11 +9,12 @@ body {
 	margin: 0;
 	padding: 0 0 50px 0;
 	color: #151824;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6, pre {
-	font-family: 'Raleway', sans-serif;
-
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -36,7 +37,7 @@ a:hover {
 
 .header {
 	width: 100vw;
-	border-bottom: 1px solid #D3D3D3;
+	/* border-bottom: 1px solid #D3D3D3; */
 }
 
 .header-sub-container {
@@ -57,15 +58,20 @@ a:hover {
 	height: 130px;
 }
 
+.logo h1 {
+	margin-left: 20px;
+}
+
 
 .links {
 	text-align: right;
 }
 
 .links a, .links-mobile a {
-	font-family: 'raleway';
-	font-weight: 600;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 500;
 	padding: 0px 5px;
+	text-decoration: underline;
 }
 
 .links-mobile {
@@ -80,14 +86,25 @@ a:hover {
 
 -------------*/
 
-#body-container {
+#hero-container {
 	margin: 2em auto 0em;
-	width: 90%;
-	max-width: 700px
+	width: 100%;
 }
 
-#body-container h1 {
-	margin: 1em 0em 10px;
+#hero-container h2 {
+	display: block;
+	position: absolute;
+	left: auto;
+	right: auto;
+	margin: 0px 15% 10px 15%;
+	text-align: center;
+	font-size: 220%;
+}
+
+.body-container {
+	clear: both;
+	margin: 15em auto;
+	max-width: 700px;
 }
 
 pre {
@@ -98,18 +115,31 @@ pre {
 	color: #ff5300;
 }
 
-#body-container h2 {
-	margin: 0em auto;
-	text-align: left;
-
-}
-
 .fa {
 	padding: 0px 5px;
 }
 
 .fa:hover {
 	color: #3a86ff;
+}
+
+/*-------------
+
+	 BODY - TABLES
+
+-------------*/
+
+table {
+	width: 80%;
+}
+
+
+table td {
+	min-width: 200px;
+}
+
+table h4 {
+	margin: 0px;
 }
 
 /*-------------
@@ -155,16 +185,34 @@ MEDIA QUERIES
 -------------*/
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+
+	.header-sub-container {
+		justify-content: center;
+	}
+
 	.links {
 		display: none;
 	}
 
 	.links-mobile {
 		display: block;
-		padding: 10px 0px;
-		text-align: right;
-		margin-right: 15px;
+		padding: 20px 0px 0px 0px;
+		text-align: center;
+	}
+
+	.links-mobile a {
+		font-size: 120%;
+		padding: 0px 10px;
+	}
+
+	#hero-container {
+		margin: 50px 0 0 0;
+	}
+
+	#hero-container h2 {
+		font-size: 180%;
+		margin: 0em 5%;
 	}
 
 }
