@@ -20,12 +20,12 @@ h1, h2, h3, h4, h5, h6, pre {
 
 a {
 	color: #151824;
-	text-decoration: underline;
-	text-decoration-color: #fee12d;
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration-color: #3a86ff;
+		text-decoration: underline;
+	text-decoration-color: #fee12d;
 }
 
 
@@ -88,7 +88,7 @@ a:hover {
 -------------*/
 
 #hero-container {
-	margin: 2em auto 0em;
+	margin: 2.5em auto 0em;
 	width: 100%;
 }
 
@@ -106,7 +106,7 @@ a:hover {
 	display: block;
 	margin: 12em auto;
 	width: 90%;
-	max-width: 900px;
+	max-width: 800px;
 }
 
 .body-container h1 {
@@ -128,27 +128,52 @@ pre {
 }
 
 .fa:hover {
-	color: #3a86ff;
+	color: #fee12d;
 }
 
 /*-------------
 
-	 BODY - TABLES
+	 BODY - ABOUT
 
 -------------*/
 
-table {
-	width: 80%;
+.about-container {
+	display: flex;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+.about-container .bio {
+	width: 50%;
+
+}
+
+.about-container .resume {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.about-container .resume button {
+	cursor: pointer;
+	font-family: 'montserrat', sans-serif;
+	background-color: #929292;
+	color: #fee12d;
+	font-weight: 500;
+	font-size: 100%;
+	padding: 10px;
+	border: 3px solid #fee12d;
+}
+
+.about-container .resume button:hover {
+	text-decoration: underline;
 }
 
 
-table td {
-	min-width: 200px;
-}
+/*-------------
 
-table h4 {
-	margin: 0px;
-}
+
 
 /*-------------
 
@@ -251,6 +276,18 @@ MEDIA QUERIES
 		margin: 0em 5%;
 	}
 
+	.about-container {
+		flex-direction: column;
+	}
+
+	.about-container .bio {
+		width: 100%;
+	}
+
+		.about-container .resume {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 750px) {
@@ -273,9 +310,14 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 770px) {
 	.body-container {
-		margin: 19em auto;
+		margin: 17em auto;
 	}
 }
 
+@media screen and (max-width: 450px) {
+	.body-container {
+		margin: 20em auto;
+	}
+}
