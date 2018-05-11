@@ -49,6 +49,7 @@ function init() {
             let linkCont = document.createElement('div');
             linkCont.className += 'project-links';
             let github = document.createElement('a');
+            github.setAttribute("target", "_blank");            
             github.href += data.projects[key].github;
             github.innerHTML = '<i class="fa fa-github fa-lg"></i>';
             let link = document.createElement('a');
