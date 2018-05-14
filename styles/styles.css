@@ -144,6 +144,7 @@ pre {
 }
 
 .about-container .bio {
+	margin-top: -10px;
 	width: 50%;
 
 }
@@ -170,6 +171,18 @@ pre {
 	text-decoration: underline;
 }
 
+.bio-tech-text {
+	margin: 0px 0px 3px 0px;
+}
+
+.tech {
+	display: inline-block;
+	color: #fee12d;
+	background-color: #a5a5a5;
+	border: 2px solid #fee12d;
+	padding: 2px 5px;
+	margin: 2px 0px;
+}
 
 /*-------------
 
@@ -285,6 +298,7 @@ MEDIA QUERIES
 	}
 
 		.about-container .resume {
+		padding: 2em 0 1em 0;
 		width: 100%;
 	}
 
