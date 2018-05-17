@@ -7,7 +7,7 @@ GLOBAL STYLES
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
-	padding: 0 0 50px 0;
+	padding: 0;
 	color: #151824;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -298,6 +298,102 @@ BODY - LINKS
 	text-decoration: none;
 }
 
+/*-------------
+
+BODY - CONTACT
+
+-------------*/
+
+.contact-intro {
+	margin: 10px 0px 0 10px;
+}
+
+.contact-intro a {
+	text-decoration: underline;
+	text-decoration-color: #fee12d;
+}
+
+.contact-form {	
+	display: block;
+	width: 100%;
+	margin: 0px 0 0 0;
+}
+
+.contact-form .name {
+	font-size: 95%;	
+	font-family: 'montserrat', sans-serif;
+	margin: 1% 10px;
+	padding: 10px;
+	width: 47%;
+	outline: none;
+	border: 3px solid #fee12d;
+	border-radius: 5px;
+		-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact-form .name:focus::-webkit-input-placeholder,  
+.contact-form .email:focus::-webkit-input-placeholder, 
+.contact-form .text:focus::-webkit-input-placeholder{
+	opacity: 0;
+}
+
+.contact-form .email {
+	font-size: 95%;	
+	font-family: 'montserrat', sans-serif;
+	margin: 1% 10px;
+	padding: 10px;
+	width: 47%;
+	outline: none;
+	border: 3px solid #fee12d;	
+	border-radius: 5px;	
+		-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+	font-size: 95%;	
+	font-family: 'montserrat', sans-serif;
+	margin: 10px;
+	padding: 10px;
+	width: 97%;
+	max-width: 100%;
+	height: 200px;
+	outline: none;
+	resize: none;
+	border: 3px solid #fee12d;	
+	border-radius: 5px;	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact-form .submit {
+	display: block;
+	clear: both;
+}
+
+.contact-form .submit {
+	cursor: pointer;
+	font-size: 95%;
+	float: right;
+	margin: 0px 12px;
+	border: 3px solid #fee12d;
+	color: #fee12d;
+	border-radius: 10px;
+	padding: 15px 40px;
+	background-color: #a5a5a5;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact-form .submit:hover {
+	text-decoration: underline;
+}
+
 
 /*-------------
 
@@ -344,7 +440,7 @@ MEDIA QUERIES
 		width: 100%;
 	}
 
-		.about-container .resume {
+	.about-container .resume {
 		padding: 2em 0 1em 0;
 		width: 100%;
 	}
@@ -376,6 +472,7 @@ MEDIA QUERIES
 	.body-container {
 		margin: 16em auto;
 	}
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -387,6 +484,30 @@ MEDIA QUERIES
 @media screen and (max-width: 770px) {
 	.body-container {
 		margin: 17em auto;
+	}
+
+	.contact-intro {
+		margin: 10px 0 0 0;
+	}
+
+	.contact-form .name {
+		margin: 10px 0px;
+		width: 97%;
+	}
+
+	.contact-form .email {
+		margin: 10px 0px;
+		width: 97%;
+	}
+
+	.contact-form textarea {
+		margin: 10px 0px;
+	}
+
+	.contact-form .submit {
+		float: left;
+		width: 97%;
+		margin: 0;
 	}
 }
 
