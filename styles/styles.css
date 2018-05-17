@@ -63,11 +63,11 @@ a:hover {
 }
 
 
-.links {
+.menu {
 	text-align: right;
 }
 
-.links a, .links-mobile a {
+.menu a, .menu-mobile a {
 	font-family: 'montserrat', sans-serif;
 	font-weight: 500;
 	padding: 0px 5px;
@@ -75,7 +75,7 @@ a:hover {
 	text-decoration-color: #fee12d; */
 }
 
-.links-mobile {
+.menu-mobile {
 	display: none;
 }
 
@@ -140,7 +140,7 @@ pre {
 .about-container {
 	display: flex;
 	width: 100%;
-	margin: 0 0 2em 0;
+	margin: 0 10px 2em 10px;
 }
 
 .about-container .bio {
@@ -165,6 +165,7 @@ pre {
 	font-size: 100%;
 	padding: 10px;
 	border: 3px solid #fee12d;
+	border-radius: 5px;
 }
 
 .about-container .resume button:hover {
@@ -182,6 +183,7 @@ pre {
 	border: 2px solid #fee12d;
 	padding: 2px 5px;
 	margin: 2px 0px;
+	border-radius: 5px;
 }
 
 /*-------------
@@ -254,6 +256,51 @@ pre {
 
 /*-------------
 
+BODY - LINKS
+
+-------------*/
+
+.link-container {
+	display: flex;
+	text-align: center;
+	width: 100%;
+	margin: 5px 10px 0 10px;
+}
+
+.link-node{
+	margin: 10px 10px 10px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #a5a5a5;
+	min-width: 100px;
+	min-height: 100px;
+	padding: 10px;
+	text-align: center;
+	border: 3px solid #fee12d;
+	border-radius: 5px;
+}
+
+.link-node p {
+	font-family: 'montserrat', sans-serif;
+	font-weight: 500;
+	color: #fee12d;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.link-node p:hover {
+	text-decoration: underline;
+}
+
+.link-container a:hover {
+	text-decoration: none;
+}
+
+
+/*-------------
+
 MEDIA QUERIES
 
 -------------*/
@@ -265,17 +312,17 @@ MEDIA QUERIES
 		justify-content: center;
 	}
 
-	.links {
+	.menu {
 		display: none;
 	}
 
-	.links-mobile {
+	.menu-mobile {
 		display: block;
 		padding: 20px 0px 0px 0px;
 		text-align: center;
 	}
 
-	.links-mobile a {
+	.menu-mobile a {
 		font-size: 120%;
 		padding: 0px 10px;
 	}
@@ -311,6 +358,19 @@ MEDIA QUERIES
 
 	.project-hero {
 		grid-column: 1;
+		margin: 10px 0;
+	}
+
+	.project {
+		margin: 10px 0;
+	}
+
+	.about-container {
+		margin: 0 0 2em 0;
+	}
+
+	.link-container {
+		margin: 5px 0 0 0;
 	}
 
 	.body-container {
@@ -333,5 +393,15 @@ MEDIA QUERIES
 @media screen and (max-width: 450px) {
 	.body-container {
 		margin: 20em auto;
+	}
+
+	.link-container {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.body-container {
+		margin: 21em auto;
 	}
 }
