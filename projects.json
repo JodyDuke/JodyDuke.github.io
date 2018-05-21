@@ -6,7 +6,7 @@
             "title": "Movie anniversaries web app",
             "description": "A web app built with React displaying a calendar with upcoming movie anniversaries and movie information.",
             "github": "https://github.com/JodyDuke/movie_anniversary_react_project",
-            "link": "/"
+            "link": "http://movieanniversaries.xyz.s3-website.eu-west-2.amazonaws.com/"
         },
         {
             "title": "Film production tools",
